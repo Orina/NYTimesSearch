@@ -43,6 +43,7 @@ The following **additional** features are implemented:
 * [X] Used RxJava: 1) the MVVM event driven part is done using RxJava’s Observables and 2) Retrofit is used in conjunction with RxJava adapter for asynchronous network calls
 * [X] Implemented empty search layout behaviour
 * [X] Used simple custom ItemDecoration for RecyclerView
+* [X] Used CoordinatorLayout with scrolling behavior that hides/shows the toolbar
 
 ## Video Walkthrough
 
