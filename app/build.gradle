@@ -1,0 +1,76 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "me.elmira.nytimessearch"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        jackOptions {
+            enabled true
+        }
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+ext {
+    supportLibraryVersion = '25.3.0'
+    junitVersion = '4.12'
+    gsonLibrary = '2.7'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    //android support library
+    compile "com.android.support:appcompat-v7:$supportLibraryVersion"
+    compile "com.android.support:design:$supportLibraryVersion"
+    compile "com.android.support:recyclerview-v7:$supportLibraryVersion"
+    compile "com.android.support:design:$supportLibraryVersion"
+    compile "com.android.support:support-annotations:$supportLibraryVersion"
+    compile "com.android.support:cardview-v7:$supportLibraryVersion"
+
+    //google Gson library
+    compile "com.google.code.gson:gson:${gsonLibrary}"
+
+    //support Retrofit library
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+
+    //support RxJava library
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'io.reactivex:rxjava:1.1.6'
+    compile 'io.reactivex:rxandroid:1.2.1'
+
+    //butterknife library
+    compile 'com.jakewharton:butterknife:8.4.0'
+
+    // Glide
+    compile 'com.github.bumptech.glide:glide:3.5.2'
+    compile 'com.android.support:support-v4:25.0.0'
+
+    //Chrome custom tabs
+    compile "com.android.support:customtabs:${supportLibraryVersion}"
+
+    testCompile "junit:junit:${junitVersion}"
+
+}

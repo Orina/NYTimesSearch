@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/labelLime"
+                android:padding="0dp">
+
+    <TextView
+        android:id="@+id/tvBeginDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_marginLeft="@dimen/margin_big"
+        android:gravity="center"
+        android:text="@string/begin_date"
+        android:textAppearance="@style/Article.SearchFilter.Title"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/tvBeginDateSetter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBeginDate"
+        android:layout_marginBottom="@dimen/margin_big"
+        android:textAppearance="@style/Article.SearchFilter.Text"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/margin_big"
+        />
+
+    <TextView
+        android:id="@+id/tvSortOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBeginDateSetter"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_marginLeft="@dimen/margin_big"
+        android:gravity="center"
+        android:text="@string/sort_order"
+        android:textAppearance="@style/Article.SearchFilter.Title"
+        android:layout_alignParentLeft="true"/>
+
+    <Spinner
+        android:id="@+id/spinnerSortOrder"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSortOrder"
+        android:layout_marginBottom="@dimen/margin_big"
+        android:layout_marginLeft="@dimen/margin_big"
+        android:entries="@array/search_order_array"
+        android:prompt="@string/search_order_prompt"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/tvNewsDesk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerSortOrder"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_marginLeft="@dimen/margin_big"
+        android:gravity="center"
+        android:text="@string/news_desk_values"
+        android:textAppearance="@style/Article.SearchFilter.Title"
+        android:layout_alignParentLeft="true"/>
+
+    <CheckBox
+        android:id="@+id/cbArts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNewsDesk"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_marginLeft="@dimen/margin_big"
+        android:text="@string/news_desk_arts"
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="@style/Article.SearchFilter.Text"
+        android:layout_alignParentLeft="true"/>
+
+    <CheckBox
+        android:id="@+id/cbFashion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cbArts"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_marginLeft="@dimen/margin_big"
+        android:text="@string/news_desk_fashion"
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="@style/Article.SearchFilter.Text"
+        android:layout_alignParentLeft="true"/>
+
+    <CheckBox
+        android:id="@+id/cbSports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cbFashion"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_marginLeft="@dimen/margin_big"
+        android:text="@string/news_desk_sports"
+        android:textColor="@color/colorPrimary"
+        android:shadowColor="@color/colorPrimary"
+        android:textAppearance="@style/Article.SearchFilter.Text"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:id="@+id/btSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cbSports"
+        android:background="@color/colorPrimary"
+        android:text="@string/button_save"
+        android:textAppearance="@style/Article.SearchFilter.Title"
+        android:textColor="@color/labelLime"
+        android:layout_alignParentLeft="true"/>
+
+</RelativeLayout>

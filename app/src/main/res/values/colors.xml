@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#757575</color>
+    <color name="colorPrimaryDark">#424242</color>
+    <!--<color name="colorAccent">#CDDC39</color>-->
+
+    <color name="colorAccent">#98ffcc</color>
+    <color name="background_color_lime">#e6fff3</color>
+    <color name="labelLime">#e8fdf3</color>
+    <color name="cursorAccent">#98ffcc</color>
+
+    <!--<color name="cursorAccent">#D4E157</color>-->
+    <color name="controlNormal">#BDBDBD</color>
+    <color name="controlActivated">#FF9800</color>
+
+    <!--<color name="background_color_lime">#F9FBE7</color>-->
+    <color name="background_color_gray">#FAFAFA</color>
+    <color name="background_color_gray_dark">#F5F5F5</color>
+
+    <!--<color name="labelLime">#F0F4C3</color>-->
+
+</resources>
