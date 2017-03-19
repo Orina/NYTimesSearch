@@ -40,7 +40,7 @@ The following **bonus** features are implemented:
 The following **additional** features are implemented:
 
 * [X] Implemented Model-View-ViewModel android design pattern 
-* [X] Used RxJava: 1) the MVVM event driven part is done using RxJava’s Observables and 2) Retrofil is used in conjunction with RxJava adapter for asynchronous network calls
+* [X] Used RxJava: 1) the MVVM event driven part is done using RxJava’s Observables and 2) Retrofit is used in conjunction with RxJava adapter for asynchronous network calls
 * [X] Implemented empty search layout behaviour
 * [X] Used simple custom ItemDecoration for RecyclerView
 
