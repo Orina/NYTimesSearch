@@ -48,18 +48,16 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/Orina/NYTimesSearch/blob/master/nytimes.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
-## Notes
-
-Describe any challenges encountered while building the app.
-
 ## Open-source libraries used
 
-- [Android Async HTTP](https://github.com/loopj/android-async-http) - Simple asynchronous HTTP requests with JSON parsing
-- [Picasso](http://square.github.io/picasso/) - Image loading and caching library for Android
+- [Glide](https://github.com/bumptech/glide) - Media management and image loading framework 
+- [Retrofit networking library](http://square.github.io/retrofit/) - Http client for Android
+- [GSON library](https://github.com/google/gson)- A Java serialization/deserialization library that can convert Java Objects into JSON and back.
+- [RxJava](https://github.com/ReactiveX/RxAndroid) - a library for composing asynchronous and event-based programs by using observable sequences
 
 ## License
 
